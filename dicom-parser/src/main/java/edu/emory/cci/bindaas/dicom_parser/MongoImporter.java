@@ -15,7 +15,7 @@ import com.pixelmed.dicom.AttributeList;
 import com.pixelmed.dicom.AttributeTag;
 import com.pixelmed.dicom.DicomInputStream;
 
-public class IndexBuilder {
+public class MongoImporter {
 
 	private String rootImageDirectory;
 	private String mongoHost;
@@ -164,7 +164,7 @@ public class IndexBuilder {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		IndexBuilder builder = new IndexBuilder();
+		MongoImporter builder = new MongoImporter();
 		
 		if(System.getProperty("mongoHost") == null)
 		{
